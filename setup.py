@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 from setuptools import setup
+from codecs import open
 import os
+import re
 import sys
 
 here = os.path.abspath(os.path.dirname(__file__))
