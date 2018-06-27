@@ -33,7 +33,7 @@ setup(
     author_email=about['author_email'],
     packages=packages,
     install_requires=requires,
-    package_dir={'namesilo': 'namesilo'}
+    package_dir={'namesilo': 'namesilo'},
     license=about['license'],
     classifiers=[
         'Development Status :: 3 - Alpha',
