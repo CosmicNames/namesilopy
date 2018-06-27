@@ -1,0 +1,7 @@
+name = 'namesilopy'
+description = 'Library for interacting with the NameSilo API'
+version = '1.0.0'
+url = 'https://labs.cosmicnames.com/python/namesilopy'
+author = 'CosmicNames Team'
+author_email = 'info@cosmicnames.com'
+license = 'MIT'
