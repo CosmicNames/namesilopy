@@ -2,12 +2,19 @@
 
 from setuptools import setup
 import os
+import sys
 
 here = os.path.abspath(os.path.dirname(__file__))
 
 about = {}
 with open(os.path.join(here, 'namesilo', '__version__.py'), 'r', 'utf-8') as f:
     exec(f.read(), about)
+
+# 'setup.py publish' shortcut.
+if sys.argv[-1] == 'publish':
+    os.system('python setup.py sdist bdist_wheel')
+    os.system('twine upload dist/*')
+    sys.exit()
 
 packages = ['namesilo']
 
